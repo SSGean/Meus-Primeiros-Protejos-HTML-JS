@@ -16,12 +16,12 @@
     <h1>Olá Mundo!</h1>
     <p>Lembre-se que esse é o seu caminho e não desvie dele!<p>
     <script>
-       var n1 = Number(window.prompt('Digite um número'))
-       var n2 = Number(window.prompt('Digite outro número'))
-       var $ = n1 + n2
-       window.alert('A soma dos valores é ' + $)   
-        
-
+       var n1 = parseInt(window.prompt('Digite um número'))     // Numeros inteiros
+       var n2 = parseFloat(window.prompt('Digite outro número')) // Numeros reais
+       var n3 = Number(window.prompt('Digite mais um número')) // Lembre-se que o JS é sensível a Maiúsculas e Mínusculas
+       var s = n1 + n2 + n3
+       window.alert(`A soma dos valores é ${s}`) // Lembre-se de usar a Crase correta
+         
     </script>
 
 </body>
