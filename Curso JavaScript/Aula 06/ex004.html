@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EX004</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: justify;
+            font: 15pt arial;
+        }
+    </style>
 </head>
 <body>
+    <h3>Hello World</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, sequi! Alias facere error sapiente praesentium soluta necessitatibus exercitationem non consequuntur nobis tempora similique ut cupiditate magni, nemo ea iste modi.</p>
     <script>
-        
-     
-
+        var nome = window.prompt('Diga seu nome')
+        var salário = Number(window.prompt('Diga seu salário'))
+        var s = salário
+        s.toString
+        s.toFixed(2).replace('.',',')
+        s.toLocaleString('pt-BR', {style: 'currency', currency: BRL})
+        window.alert(`O seu salário é de ${s}`)
     </script>
 </body>
 </html>
