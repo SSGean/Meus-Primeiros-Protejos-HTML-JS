@@ -16,13 +16,10 @@
     <h3>Hello World</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, sequi! Alias facere error sapiente praesentium soluta necessitatibus exercitationem non consequuntur nobis tempora similique ut cupiditate magni, nemo ea iste modi.</p>
     <script>
-        var nome = window.prompt('Diga seu nome')
-        var salário = Number(window.prompt('Diga seu salário'))
-        var s = salário
-        s.toString
-        s.toFixed(2).replace('.',',')
-        s.toLocaleString('pt-BR', {style: 'currency', currency: BRL})
-        window.alert(`O seu salário é de ${s}`)
+        var salário = parseFloat(window.prompt('Diga seu salário'))
+        salário.toFixed(2)
+        window.alert(salário.toLocaleString('pt-BR', {style: "currency", currency: 'BRL'})) //Conversão de valores em moeda corrente
+        
     </script>
 </body>
 </html>
