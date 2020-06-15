@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checagem de nacionalidade</title>
+    <style> body {
+            background-color: whitesmoke;
+            font: normal 15px arial;
+    }
+            div {
+                margin-top: 10px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de nacionalidade</h1>
+    Você é de que país: <input type="text" name="txtvel" id="txtvel">
+    <input type="button" value="Testar" onclick="verificar()">
+    <div id= "res">
+
+    </div>
+    <script>
+        function verificar() {
+            var txtv = window.document.querySelector("input#txtvel")
+            var res = window.document.querySelector("div#res")
+            var vel = (txtv.value)
+            res.innerHTML = `<p>Você nasceu no(a) ${vel}!</p>`
+            if (vel == 'Brasil' || 'brasil') {
+                res.innerHTML += `<p>Parabéns, você é Brasileiro!</p>`
+            } else {
+            res.innerHTML += '<p>Parabéns, você é Estrangeiro!</p>'
+            }
+        }
+
+    </script>
+
+    
+</body>
+</html>
