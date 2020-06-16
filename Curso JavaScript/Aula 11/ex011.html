@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício JS</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font: normal 15px arial;
+
+        }
+
+        div {
+            margin-top: 15px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Controle de acesso por idade</h1>
+    Idade do usuário: <input type="number" name="txtvel" id="txtvel"> Anos
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.queryCommandValue('div#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `Você tem ${vel} anos`
+            if (vel > 18) {
+                res.innerHTML == `<p>Acesso autorizado</p>`
+            } else
+                res.innerHTML += `<p>Acesso negado</p>`
+        }
+    </script>
+
+</body>
+
+</html>
