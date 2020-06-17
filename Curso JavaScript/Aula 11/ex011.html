@@ -33,11 +33,10 @@
             var ida= window.document.querySelector("input#idade")
             var res= window.document.querySelector("div#res")
             var ida= Number(ida.value)
-            res.innerHTML = `Você tem <strong>${ida}</strong> anos`
             if (ida >= 18) {
-                res.innerHTML = `<p>Acesso autorizado</p>`
+                res.innerHTML = `<p>Você tem <strong>${ida}</strong> anos! Acesso autorizado!</p>`
             } else
-                res.innerHTML = `<p>Acesso negado</p>`
+                res.innerHTML = `<p>Acesso negado por ter apenar <strong>${ida}</strong> anos!</p>`
             }
     </script>
 
