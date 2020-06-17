@@ -19,8 +19,10 @@
 </head>
 
 <body>
-    <h1>Controle de acesso por idade</h1>
-    Idade do usuário: <input type="number" name="txtvel" id="txtvel"> Anos
+    <h1>Hello World</h1>
+    <h2>Controle de acesso por idade</h2>
+
+    Idade do usuário: <input type="number" name="idade" id="idade"> Anos
     <input type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
@@ -28,15 +30,15 @@
 
     <script>
         function calcular() {
-            var txtv = window.document.querySelector('input#txtvel')
-            var res = window.document.queryCommandValue('div#res')
-            var vel = Number(txtv.value)
-            res.innerHTML = `Você tem ${vel} anos`
-            if (vel > 18) {
-                res.innerHTML == `<p>Acesso autorizado</p>`
+            var ida= window.document.querySelector("input#idade")
+            var res= window.document.querySelector("div#res")
+            var ida= Number(ida.value)
+            res.innerHTML = `Você tem <strong>${ida}</strong> anos`
+            if (ida >= 18) {
+                res.innerHTML = `<p>Acesso autorizado</p>`
             } else
-                res.innerHTML += `<p>Acesso negado</p>`
-        }
+                res.innerHTML = `<p>Acesso negado</p>`
+            }
     </script>
 
 </body>
