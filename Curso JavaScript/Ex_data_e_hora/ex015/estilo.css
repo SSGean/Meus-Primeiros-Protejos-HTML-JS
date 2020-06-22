@@ -1,6 +1,7 @@
 body {
-    background-color: rgb(107, 189, 228);
+    background-color: #1ab6f3;
     font: normal 12pt arial;
+    border-radius: 15px;
 }
 
 header {
