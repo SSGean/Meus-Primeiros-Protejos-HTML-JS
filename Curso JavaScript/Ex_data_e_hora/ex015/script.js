@@ -30,6 +30,7 @@ function verificar() {
             gênero = 'feminino'
             if (idade >= 0 && idade <10) {
                 //Criança
+                document.body.style.backgroundColor = "pink"
                 img.setAttribute('src', 'mulher-crianca.png')
             } else if (idade < 21) {
                 //Jovem
