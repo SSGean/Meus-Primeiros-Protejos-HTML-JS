@@ -1,6 +1,6 @@
 function converter() {
    
-    var c = Number(window.prompt('Digite uma temperatura em °C(Celsius)'));
+    var c = Number(window.prompt('Digite uma temperatura em °C(Celsius)').replace(',' , '.'));
 
     var k = (c + 273.15).toLocaleString('pt-BR');
 
@@ -8,7 +8,7 @@ function converter() {
     
     document.getElementById('div#res');
 
-    c.toFixed(2).replace('.' , ',');
+    c = c.toLocaleString('pt-BR')
     
     res.innerHTML = (` <b> A temperatura de ${c}°C, corresponde a...</b><br>
     <br>
