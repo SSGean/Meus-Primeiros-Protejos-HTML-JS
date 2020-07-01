@@ -1,4 +1,4 @@
-function converter() {
+function reajustar() {
 
     var func = window.prompt(`Qual o nome do(a) funcionário(a)?`);
     var sal = Number(window.prompt(`Qual o salário de ${func}?`).replace(',', '.'));

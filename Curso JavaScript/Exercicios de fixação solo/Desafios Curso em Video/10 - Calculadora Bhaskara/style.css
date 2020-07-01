@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(50, 160, 224);
+    text-align: center;
+    font-style: normal 15px;
+}
+
+section {
+    width: 400px;
+    text-align: center;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    background-color: aliceblue;
+}

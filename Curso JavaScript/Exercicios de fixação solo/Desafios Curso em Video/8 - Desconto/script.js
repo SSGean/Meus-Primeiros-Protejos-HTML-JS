@@ -1,4 +1,4 @@
-function converter() {
+function desconto() {
 
     var produto = window.prompt('Qual é o produto que você está comprando?');
     var preco = Number(window.prompt(`Qual é o preço de ${produto}`).replace(',', '.'));
