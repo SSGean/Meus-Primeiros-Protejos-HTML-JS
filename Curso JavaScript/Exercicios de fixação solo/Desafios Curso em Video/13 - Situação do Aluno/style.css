@@ -11,13 +11,14 @@ section {
     background-color: aliceblue;
 }
 
-
-.green {
-    background-color: rgb(136, 221, 136);
-    color: rgb(70, 170, 56);
+.reprovado {
+    background-color: rgb(238, 160, 160);
+    color: red;
 }
-
-.red {
-    background-color: rgb(240, 133, 133);
-    color: rgb(139, 34, 34);
+.recuperacao {
+    color: rgb(214, 184, 52);
+}
+.aprovado {
+    background-color: rgb(143, 238, 143);
+    color: rgb(7, 110, 7);
 }

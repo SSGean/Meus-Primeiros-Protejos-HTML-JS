@@ -8,10 +8,10 @@ function verificar() {
 
     if (bissexto == 0) {
         res.innerHTML = (`<h3>Analisando o ano de ${ano}...</h3>
-    <p class="p1">O ano de ${ano} <b><span class="green"> É BISSEXTO</span>&#9989</b></p>`);
+         O ano de ${ano} <b><span class="green"> É BISSEXTO</span>&#9989</b>`);
     } else {
         res.innerHTML = (`<h3>Analisando o ano de ${ano}...</h3>
-      <p class="p2">O ano de ${ano} <b><span class="red">NÃO É BISSEXTO</span> &#10060</b></p>`);
+         O ano de ${ano} <b><span class="red">NÃO É BISSEXTO</span> &#10060</b>`);
     }
 
 
